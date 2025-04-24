@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Feature flags -->
+    <bool name="feature_analytics_enabled">true</bool>
+    <bool name="feature_crash_reporting_enabled">true</bool>
+    <bool name="feature_offline_mode_enabled">true</bool>
+    
+    <!-- UI settings -->
+    <bool name="ui_animations_enabled">true</bool>
+    <bool name="ui_ripple_enabled">true</bool>
+    <bool name="ui_elevation_enabled">true</bool>
+    
+    <!-- Behavior settings -->
+    <bool name="behavior_auto_save_enabled">true</bool>
+    <bool name="behavior_auto_sync_enabled">true</bool>
+    <bool name="behavior_backup_enabled">true</bool>
+    
+    <!-- Debug settings -->
+    <bool name="debug_logging_enabled">false</bool>
+    <bool name="debug_network_logging_enabled">false</bool>
+    <bool name="debug_strict_mode_enabled">false</bool>
+</resources> 

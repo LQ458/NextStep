@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">下一步</string>
+    
+    <!-- 通用 -->
+    <string name="loading">加载中…</string>
+    <string name="error">错误</string>
+    <string name="retry">重试</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    
+    <!-- 认证 -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="name">姓名</string>
+    
+    <!-- Todo -->
+    <string name="todos">任务</string>
+    <string name="add_todo">添加任务</string>
+    <string name="edit_todo">编辑任务</string>
+    <string name="todo_title">标题</string>
+    <string name="todo_description">描述</string>
+    <string name="todo_due_date">截止日期</string>
+    <string name="todo_priority">优先级</string>
+    <string name="todo_tags">标签</string>
+    <string name="priority_low">低</string>
+    <string name="priority_medium">中</string>
+    <string name="priority_high">高</string>
+    
+    <!-- Note -->
+    <string name="notes">笔记</string>
+    <string name="add_note">添加笔记</string>
+    <string name="edit_note">编辑笔记</string>
+    <string name="note_title">标题</string>
+    <string name="note_content">内容</string>
+    <string name="note_tags">标签</string>
+    
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="theme">主题</string>
+    <string name="language">语言</string>
+    <string name="sync">同步</string>
+    <string name="about">关于</string>
+</resources> 

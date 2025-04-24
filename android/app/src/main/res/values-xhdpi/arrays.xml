@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Priority levels -->
+    <string-array name="priority_levels">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+    </string-array>
+    
+    <!-- Task categories -->
+    <string-array name="task_categories">
+        <item>工作</item>
+        <item>个人</item>
+        <item>学习</item>
+        <item>其他</item>
+    </string-array>
+    
+    <!-- Time units -->
+    <string-array name="time_units">
+        <item>分钟</item>
+        <item>小时</item>
+        <item>天</item>
+        <item>周</item>
+        <item>月</item>
+    </string-array>
+    
+    <!-- Animation interpolators -->
+    <string-array name="animation_interpolators">
+        <item>@android:anim/accelerate_interpolator</item>
+        <item>@android:anim/decelerate_interpolator</item>
+        <item>@android:anim/accelerate_decelerate_interpolator</item>
+        <item>@android:anim/anticipate_interpolator</item>
+        <item>@android:anim/overshoot_interpolator</item>
+        <item>@android:anim/anticipate_overshoot_interpolator</item>
+        <item>@android:anim/bounce_interpolator</item>
+    </string-array>
+</resources> 

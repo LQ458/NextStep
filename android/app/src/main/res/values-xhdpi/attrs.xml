@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attributes for NextStep components -->
+    <declare-styleable name="NextStepView">
+        <!-- Background attributes -->
+        <attr name="backgroundColor" format="color" />
+        <attr name="backgroundDrawable" format="reference" />
+        
+        <!-- Text attributes -->
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        
+        <!-- Shape attributes -->
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        
+        <!-- Layout attributes -->
+        <attr name="padding" format="dimension" />
+        <attr name="margin" format="dimension" />
+        
+        <!-- Icon attributes -->
+        <attr name="icon" format="reference" />
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconColor" format="color" />
+        <attr name="iconPosition" format="enum">
+            <enum name="start" value="0" />
+            <enum name="top" value="1" />
+            <enum name="end" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        
+        <!-- State attributes -->
+        <attr name="enabled" format="boolean" />
+        <attr name="selected" format="boolean" />
+        <attr name="clickable" format="boolean" />
+        <attr name="focusable" format="boolean" />
+    </declare-styleable>
+</resources> 

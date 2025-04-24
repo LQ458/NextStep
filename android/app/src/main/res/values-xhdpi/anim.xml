@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fade animations -->
+    <integer name="fade_duration">300</integer>
+    <integer name="fade_delay">0</integer>
+    
+    <!-- Slide animations -->
+    <integer name="slide_duration">300</integer>
+    <integer name="slide_delay">0</integer>
+    
+    <!-- Scale animations -->
+    <integer name="scale_duration">300</integer>
+    <integer name="scale_delay">0</integer>
+    
+    <!-- Rotate animations -->
+    <integer name="rotate_duration">300</integer>
+    <integer name="rotate_delay">0</integer>
+</resources> 

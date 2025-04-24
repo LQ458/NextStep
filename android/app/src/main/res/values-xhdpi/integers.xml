@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Animation durations -->
+    <integer name="anim_duration_short">200</integer>
+    <integer name="anim_duration_medium">300</integer>
+    <integer name="anim_duration_long">400</integer>
+    
+    <!-- Animation delays -->
+    <integer name="anim_delay_short">100</integer>
+    <integer name="anim_delay_medium">200</integer>
+    <integer name="anim_delay_long">300</integer>
+    
+    <!-- View counts -->
+    <integer name="max_items_per_page">20</integer>
+    <integer name="min_items_per_page">5</integer>
+    <integer name="default_items_per_page">10</integer>
+    
+    <!-- Timeouts -->
+    <integer name="timeout_short">1000</integer>
+    <integer name="timeout_medium">2000</integer>
+    <integer name="timeout_long">3000</integer>
+    
+    <!-- Retry counts -->
+    <integer name="max_retry_count">3</integer>
+    <integer name="default_retry_count">1</integer>
+</resources> 

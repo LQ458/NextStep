@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义属性声明 -->
+    <declare-styleable name="NextStepView">
+        <!-- 背景颜色 -->
+        <attr name="backgroundColor" format="color" />
+        <!-- 文字颜色 -->
+        <attr name="textColor" format="color" />
+        <!-- 文字大小 -->
+        <attr name="textSize" format="dimension" />
+        <!-- 圆角半径 -->
+        <attr name="cornerRadius" format="dimension" />
+        <!-- 边框宽度 -->
+        <attr name="strokeWidth" format="dimension" />
+        <!-- 边框颜色 -->
+        <attr name="strokeColor" format="color" />
+        <!-- 内边距 -->
+        <attr name="padding" format="dimension" />
+        <!-- 外边距 -->
+        <attr name="margin" format="dimension" />
+        <!-- 图标 -->
+        <attr name="icon" format="reference" />
+        <!-- 图标大小 -->
+        <attr name="iconSize" format="dimension" />
+        <!-- 图标颜色 -->
+        <attr name="iconColor" format="color" />
+        <!-- 图标位置 -->
+        <attr name="iconPosition">
+            <enum name="start" value="0" />
+            <enum name="top" value="1" />
+            <enum name="end" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <!-- 图标与文字间距 -->
+        <attr name="iconSpacing" format="dimension" />
+        <!-- 是否显示图标 -->
+        <attr name="showIcon" format="boolean" />
+        <!-- 是否显示文字 -->
+        <attr name="showText" format="boolean" />
+        <!-- 是否启用 -->
+        <attr name="enabled" format="boolean" />
+        <!-- 是否选中 -->
+        <attr name="selected" format="boolean" />
+        <!-- 是否可点击 -->
+        <attr name="clickable" format="boolean" />
+        <!-- 是否可长按 -->
+        <attr name="longClickable" format="boolean" />
+        <!-- 是否可聚焦 -->
+        <attr name="focusable" format="boolean" />
+        <!-- 是否可触摸 -->
+        <attr name="touchable" format="boolean" />
+        <!-- 是否可见 -->
+        <attr name="visible" format="boolean" />
+        <!-- 透明度 -->
+        <attr name="alpha" format="float" />
+        <!-- 旋转角度 -->
+        <attr name="rotation" format="float" />
+        <!-- 缩放比例 -->
+        <attr name="scale" format="float" />
+        <!-- 动画持续时间 -->
+        <attr name="animationDuration" format="integer" />
+        <!-- 动画插值器 -->
+        <attr name="animationInterpolator" format="reference" />
+        <!-- 动画重复次数 -->
+        <attr name="animationRepeatCount" format="integer" />
+        <!-- 动画重复模式 -->
+        <attr name="animationRepeatMode">
+            <enum name="restart" value="1" />
+            <enum name="reverse" value="2" />
+        </attr>
+    </declare-styleable>
+</resources> 

@@ -1,0 +1,104 @@
+# Android 忽略文件
+
+# Gradle 文件
+.gradle/
+build/
+/*/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# 本地配置
+local.properties
+*.properties
+
+# Android Studio 生成的文件
+*.iml
+.idea/
+.idea/workspace.xml
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# 生成的文件
+bin/
+gen/
+out/
+
+# 混淆文件
+proguard/
+
+# 日志文件
+*.log
+
+# Android Studio 导航编辑器临时文件
+.navigation/
+
+# Android Studio 捕获的文件
+captures/
+
+# Keystore 文件
+*.jks
+*.keystore
+
+# Google Services文件 (e.g. APIs 或 Firebase)
+google-services.json
+
+# 渠道配置文件
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Signing 配置
+signing.properties
+
+# hprof文件
+*.hprof
+
+# Node.js 忽略文件
+
+# 依赖
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# 构建输出
+dist/
+build/
+.next/
+.nuxt/
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 缓存
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+
+# 覆盖率报告
+coverage/
+
+# 其他
+.DS_Store
+Thumbs.db 

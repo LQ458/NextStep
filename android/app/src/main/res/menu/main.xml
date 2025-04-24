@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <!-- Add task -->
+    <item
+        android:id="@id/menu_add_task"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add"
+        app:showAsAction="ifRoom" />
+    
+    <!-- Edit task -->
+    <item
+        android:id="@id/menu_edit_task"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/edit"
+        app:showAsAction="ifRoom" />
+    
+    <!-- Delete task -->
+    <item
+        android:id="@id/menu_delete_task"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom" />
+    
+    <!-- Settings -->
+    <item
+        android:id="@id/menu_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+    
+    <!-- Help -->
+    <item
+        android:id="@id/menu_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/help"
+        app:showAsAction="never" />
+</menu> 

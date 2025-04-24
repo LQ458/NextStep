@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- View IDs -->
+    <item name="task_list" type="id" />
+    <item name="task_title" type="id" />
+    <item name="task_description" type="id" />
+    <item name="task_priority" type="id" />
+    <item name="task_category" type="id" />
+    <item name="task_due_date" type="id" />
+    <item name="task_completed" type="id" />
+    
+    <!-- Menu IDs -->
+    <item name="menu_add_task" type="id" />
+    <item name="menu_edit_task" type="id" />
+    <item name="menu_delete_task" type="id" />
+    <item name="menu_settings" type="id" />
+    <item name="menu_help" type="id" />
+    
+    <!-- Dialog IDs -->
+    <item name="dialog_add_task" type="id" />
+    <item name="dialog_edit_task" type="id" />
+    <item name="dialog_delete_task" type="id" />
+    <item name="dialog_settings" type="id" />
+    
+    <!-- Fragment IDs -->
+    <item name="fragment_task_list" type="id" />
+    <item name="fragment_task_detail" type="id" />
+    <item name="fragment_settings" type="id" />
+</resources> 
