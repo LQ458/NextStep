@@ -1,68 +1,51 @@
 package com.nextstep.data.repository
 
-import android.util.Log
-import com.nextstep.data.db.TaskDao
 import com.nextstep.data.model.Task
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.withContext
-import javax.inject.Inject
+import java.time.LocalDate
 
-private const val TAG = "TaskRepository"
-
-class TaskRepository @Inject constructor(private val taskDao: TaskDao) {
+interface TaskRepository {
+    fun getAllTasksFlow(): Flow<List<Task>>
     
-    init {
-        Log.d(TAG, "TaskRepository initialized")
-    }
+    fun getTasksForProject(projectId: Long): Flow<List<Task>>
     
-    val allTasksFlow: Flow<List<Task>> = taskDao.getAllTasksFlow()
-        .flowOn(Dispatchers.IO)
-        .catch { e -> 
-            Log.e(TAG, "Error fetching tasks flow", e)
-            throw e
-        }
-
-    suspend fun getAllTasks(): List<Task> = withContext(Dispatchers.IO) {
-        try {
-            val tasks = taskDao.getAllTasks()
-            Log.d(TAG, "Got ${tasks.size} tasks")
-            return@withContext tasks
-        } catch (e: Exception) {
-            Log.e(TAG, "Error getting all tasks", e)
-            throw e
-        }
-    }
-
-    suspend fun insertTask(task: Task) = withContext(Dispatchers.IO) {
-        try {
-            val id = taskDao.insertTask(task)
-            Log.d(TAG, "Task inserted with id: $id")
-        } catch (e: Exception) {
-            Log.e(TAG, "Error inserting task", e)
-            throw e
-        }
-    }
-
-    suspend fun updateTask(task: Task) = withContext(Dispatchers.IO) {
-        try {
-            val rows = taskDao.updateTask(task)
-            Log.d(TAG, "Updated $rows task(s)")
-        } catch (e: Exception) {
-            Log.e(TAG, "Error updating task", e)
-            throw e
-        }
-    }
-
-    suspend fun deleteTask(task: Task) = withContext(Dispatchers.IO) {
-        try {
-            val rows = taskDao.deleteTask(task)
-            Log.d(TAG, "Deleted $rows task(s)")
-        } catch (e: Exception) {
-            Log.e(TAG, "Error deleting task", e)
-            throw e
-        }
-    }
+    fun getTasksByLabelFlow(label: String): Flow<List<Task>>
+    
+    fun getTasksWithDueDateFlow(): Flow<List<Task>>
+    
+    fun getOverdueTasksFlow(): Flow<List<Task>>
+    
+    fun getTasksForPeriod(startTime: Long, endTime: Long): Flow<List<Task>>
+    
+    fun getTaskById(taskId: Long): Flow<Task?>
+    
+    fun searchTasksFlow(query: String): Flow<List<Task>>
+    
+    suspend fun getAllTasks(): List<Task>
+    
+    suspend fun insertTask(task: Task): Long
+    
+    suspend fun updateTask(task: Task): Int
+    
+    suspend fun deleteTask(task: Task): Int
+    
+    suspend fun updateTaskCompletionStatus(taskId: Long, completed: Boolean): Int
+    
+    suspend fun updateTaskDueDate(taskId: Long, dueDate: Long?): Int
+    
+    suspend fun updateTaskPriority(taskId: Long, priority: Int): Int
+    
+    fun getTaskCountInDateRange(startTime: Long, endTime: Long): Map<Long, Int>
+    
+    fun getTasksForToday(): Flow<List<Task>>
+    
+    fun getTasksForWeek(): Flow<List<Task>>
+    
+    fun getTasksForMonth(year: Int, month: Int): Flow<List<Task>>
+    
+    suspend fun getTasksByDate(date: LocalDate): List<Task>
+    
+    suspend fun getTaskCountInDateRange(startDate: LocalDate, endDate: LocalDate): Map<Long, Int>
+    
+    suspend fun deleteTasksByProjectId(projectId: Long): Int
 } 
